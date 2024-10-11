@@ -1,0 +1,6 @@
+services:
+  ubuntu:
+    image: ubuntu:22.04
+    container_name: ubuntu-kakfa-hw
+    command: "bash"
+    tty: true
