@@ -1,0 +1,7 @@
+services:
+  ubuntu:
+    image: ubuntu:22.04
+    container_name: ubuntu-kakfa-hw2
+    command: "tail -f /dev/null"
+    volumes:
+      - ./kraft:/opt/kraft
