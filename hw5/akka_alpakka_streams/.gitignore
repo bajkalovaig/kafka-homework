@@ -1,0 +1,18 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Scala
+target/
+project/target/
+project/project/
+*.class
+*.log
+*.tmp
+*.bak
+
+# SBT
+.sbt/
+.bsp/
