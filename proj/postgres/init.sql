@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS events (id serial PRIMARY KEY, veh_id TEXT, sensor_value real, sensor_ts TIMESTAMP DEFAULT current_timestamp(0));
