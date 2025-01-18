@@ -1,0 +1,18 @@
+auth:
+  type: DISABLED
+kafka:
+  clusters:
+  - bootstrapServers: broker01:9093,broker02:9093
+    kafkaConnect:
+    - address: http://connect:8083
+      name: connect
+    name: local cluster
+    properties:
+      security.protocol: SASL_PLAINTEXT
+      sasl.mechanism: PLAIN
+      sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required
+        username="admin" password="admin-secret";
+    readOnly: false
+rbac:
+  roles: []
+webclient: {}
